@@ -8,3 +8,13 @@ C:\Users\FIEECEC\Documents\PPDS\cafe\cafe\obj\Debug\cafe.csproj.GenerateResource
 C:\Users\FIEECEC\Documents\PPDS\cafe\cafe\obj\Debug\cafe.csproj.CoreCompileInputs.cache
 C:\Users\FIEECEC\Documents\PPDS\cafe\cafe\obj\Debug\cafe.exe
 C:\Users\FIEECEC\Documents\PPDS\cafe\cafe\obj\Debug\cafe.pdb
+C:\Diseño\cafe\EAPPP_Angos_Cesar\bin\Debug\cafe.exe.config
+C:\Diseño\cafe\EAPPP_Angos_Cesar\bin\Debug\cafe.exe
+C:\Diseño\cafe\EAPPP_Angos_Cesar\bin\Debug\cafe.pdb
+C:\Diseño\cafe\EAPPP_Angos_Cesar\obj\Debug\cafe.csproj.AssemblyReference.cache
+C:\Diseño\cafe\EAPPP_Angos_Cesar\obj\Debug\cafe.Form1.resources
+C:\Diseño\cafe\EAPPP_Angos_Cesar\obj\Debug\cafe.Properties.Resources.resources
+C:\Diseño\cafe\EAPPP_Angos_Cesar\obj\Debug\cafe.csproj.GenerateResource.cache
+C:\Diseño\cafe\EAPPP_Angos_Cesar\obj\Debug\cafe.csproj.CoreCompileInputs.cache
+C:\Diseño\cafe\EAPPP_Angos_Cesar\obj\Debug\cafe.exe
+C:\Diseño\cafe\EAPPP_Angos_Cesar\obj\Debug\cafe.pdb

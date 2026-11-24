@@ -33,16 +33,37 @@ namespace cafe
             txtCantidad.Text = "1";
             rbtnMostrador.Checked = true;
             //Creacion de items del Catalogo
-            lvCatalogo.Items.Add("Cafe Expreso");
-            lvCatalogo.Items.Add("Bolon de Queso");
-            lvCatalogo.Items.Add("Bolon de Chicharon");
-            lvCatalogo.Items.Add("Empanada de viento");
-            lvCatalogo.Items.Add("Encebollado");
-            lvCatalogo.Items.Add("Sanduche simple");
-            lvCatalogo.Items.Add("Cafe con leche");
-            lvCatalogo.Items.Add("Ceviche de camaron");
-            lvCatalogo.Items.Add("Majado");
-            lvCatalogo.Items.Add("Batido de mora");
+            lvCatalogo.View = View.Details;
+            lvCatalogo.FullRowSelect = true;
+            lvCatalogo.GridLines = true;
+
+            lvCatalogo.Columns.Clear();
+            lvCatalogo.Columns.Add("Producto", 120);
+            lvCatalogo.Columns.Add("Precio", 100);
+
+            // Productos y precios
+            string[,] productos =
+            {
+                 {"Cafe Expreso", "1.50"},
+                 {"Bolon de Queso", "2.00"},
+                 {"Bolon de Chicharron", "2.50"},
+                 {"Empanada de Viento", "1.00"},
+                 {"Encebollado", "3.50"},
+                 {"Sanduche Simple", "2.00"},
+                 {"Cafe con Leche", "1.75"},
+                 {"Ceviche de Camaron", "4.50"},
+                 {"Majado", "3.00"},
+                 {"Batido de Mora", "1.50"}
+              };
+            //Agregar productos me diante un lazo for
+            lvCatalogo.Items.Clear();
+
+            for (int i = 0; i < productos.GetLength(0); i++)
+            {
+                ListViewItem item = new ListViewItem(productos[i, 0]);
+                item.SubItems.Add("$" + productos[i, 1]);
+                lvCatalogo.Items.Add(item);
+            }
 
         }
         //Programacion de Eventos de Boton Limpiar
