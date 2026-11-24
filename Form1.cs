@@ -21,7 +21,40 @@ namespace cafe
 
         private void lvCatalogo_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            // Selecionar Productos del Catalogo
+            if (lvCatalogo.SelectedItems.Count > 0)
+            {
+                // Obtener el producto seleccionado
+                ListViewItem item = lvCatalogo.SelectedItems[0];
+
+                string producto = item.SubItems[0].Text;
+                string precio = item.SubItems[1].Text;
+
+                // Mostrar producto en el TextBox
+                txtProducto.Text = producto;
+
+                // Mostrar producto y precio en el estado
+                lblEstado.Text = "Producto seleccionado: " +
+                                 producto + " - Precio: " + precio;
+
+                // Habilitar boton si la cantidad es >= 1
+                int cantidad;
+
+                if (int.TryParse(txtCantidad.Text, out cantidad))
+                {
+                    btnAgregar.Enabled = cantidad >= 1;
+                }
+                else
+                {
+                    btnAgregar.Enabled = false;
+                }
+            }
+            else
+            {
+                txtProducto.Clear();
+                btnAgregar.Enabled = false;
+                lblEstado.Text = "Seleccione un producto";
+            }
         }
         //Inicialiar y Cargar Formulario
         private void Form1_Load(object sender, EventArgs e)
@@ -38,8 +71,8 @@ namespace cafe
             lvCatalogo.GridLines = true;
 
             lvCatalogo.Columns.Clear();
-            lvCatalogo.Columns.Add("Producto", 120);
-            lvCatalogo.Columns.Add("Precio", 100);
+            lvCatalogo.Columns.Add("Producto", 110);
+            lvCatalogo.Columns.Add("Precio", 60);
 
             // Productos y precios
             string[,] productos =
@@ -64,8 +97,9 @@ namespace cafe
                 item.SubItems.Add("$" + productos[i, 1]);
                 lvCatalogo.Items.Add(item);
             }
-
+            
         }
+        
         //Programacion de Eventos de Boton Limpiar
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
@@ -82,6 +116,26 @@ namespace cafe
 
 
 
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            int cantidad;
+
+            btnAgregar.Enabled =
+                lvCatalogo.SelectedItems.Count > 0 &&
+                int.TryParse(txtCantidad.Text, out cantidad) &&
+                cantidad >= 1;
+        }
+
+        private void btnQuitar_Click(object sender, EventArgs e)
+        {
+            if (lvPedido.SelectedItems.Count > 0){
+                btnQuitar.Enabled = true;
+            }
+            else{
+                btnQuitar.Enabled = false;
+                }
         }
     }
 }
