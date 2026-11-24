@@ -1,0 +1,10 @@
+C:\Users\FIEECEC\Documents\PPDS\cafe\cafe\bin\Debug\cafe.exe.config
+C:\Users\FIEECEC\Documents\PPDS\cafe\cafe\bin\Debug\cafe.exe
+C:\Users\FIEECEC\Documents\PPDS\cafe\cafe\bin\Debug\cafe.pdb
+C:\Users\FIEECEC\Documents\PPDS\cafe\cafe\obj\Debug\cafe.csproj.AssemblyReference.cache
+C:\Users\FIEECEC\Documents\PPDS\cafe\cafe\obj\Debug\cafe.Form1.resources
+C:\Users\FIEECEC\Documents\PPDS\cafe\cafe\obj\Debug\cafe.Properties.Resources.resources
+C:\Users\FIEECEC\Documents\PPDS\cafe\cafe\obj\Debug\cafe.csproj.GenerateResource.cache
+C:\Users\FIEECEC\Documents\PPDS\cafe\cafe\obj\Debug\cafe.csproj.CoreCompileInputs.cache
+C:\Users\FIEECEC\Documents\PPDS\cafe\cafe\obj\Debug\cafe.exe
+C:\Users\FIEECEC\Documents\PPDS\cafe\cafe\obj\Debug\cafe.pdb
